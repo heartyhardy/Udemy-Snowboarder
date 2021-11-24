@@ -10,6 +10,7 @@ public class HandleWin : MonoBehaviour
         if(other.tag == "Player"){
             if(finishEffect != null){
                 finishEffect.Play();
+                GetComponent<AudioSource>().Play();
             }
             Invoke("ReloadScene", 1f);
         }
